@@ -10,3 +10,7 @@
 	path = vim/bundle/supertab
 	url = https://github.com/ervandew/supertab.git
 	ignore = dirty
+[submodule "vim/bundle/protobuf-syntax"]
+	path = vim/bundle/protobuf-syntax
+	url = https://github.com/jdevera/vim-protobuf-syntax.git
+	ignore = dirty
