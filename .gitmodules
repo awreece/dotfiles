@@ -18,3 +18,7 @@
 	path = vim/bundle/django
 	url = https://github.com/vim-scripts/django.vim
 	ignore = dirty
+[submodule "vim/bundle/Rainbow-Parenthesis"]
+	path = vim/bundle/Rainbow-Parenthesis
+	url = https://github.com/vim-scripts/Rainbow-Parenthesis.git
+	ignore = dirty
