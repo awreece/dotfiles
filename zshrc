@@ -30,7 +30,7 @@ bindkey '^E' edit-command-line
 # Local Settings -------------------------------------------------------------
 if [[ -s $HOME/.zshrc_local ]] ; then source $HOME/.zshrc_local ; fi
 
-PROMPT='%{${fg_bold[yellow]}%}%n%{$reset_color%}%{${fg[yellow]}%}@%m%{$reset_color%} %{$fg[green]%}%~%{$reset_color%}%{$fg[yellow]%}%#%{$reset_color%} '
+PROMPT='%{${fg_bold[blue]}%}%n%{$reset_color%}%{${fg[blue]}%}@%m%{$reset_color%} %{$fg[green]%}%~%{$reset_color%}%{$fg[magenta]%}%#%{$reset_color%} '
 
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[blue]%}("

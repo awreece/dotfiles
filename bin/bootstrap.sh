@@ -18,4 +18,6 @@ ensure_link ".dotfiles/vimrc"      ".vimrc"
 ensure_link ".dotfiles/gitconfig"      ".gitconfig"
 ensure_link ".dotfiles/zshrc"          ".zshrc"
 
+# TODO(awreece): Ensure submodules updated!
+
 echo completed
