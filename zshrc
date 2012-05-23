@@ -16,8 +16,16 @@ plugins=(git brew vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
+# Add brew to path.
 export PATH=~/homebrew/bin:$PATH
+
+# Enable vim mode.
+bindkey -v
+
+# Enable command line modification.
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey '^E' edit-command-line
 
 # Local Settings -------------------------------------------------------------
 if [[ -s $HOME/.zshrc_local ]] ; then source $HOME/.zshrc_local ; fi

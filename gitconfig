@@ -1,0 +1,9 @@
+[user]
+	name = Alex Reece
+	email = awreece@gmail.com
+
+[core]
+	editor = vim
+
+[color]
+	ui = true

@@ -1,0 +1,20 @@
+Installation instructions:
+
+	# Symlink the vimrc file.
+	ln -s ~/.dotfiles/vimrc ~/.vimrc
+
+	# Symlink the vim file.
+	ln -s ~/.dotfiles/vim ~/.vim
+
+	# 'Install' the go bundle.
+	ln -s $GOROOT/misc/vim ~/.vim/bundle/go
+
+	# Actually get submodule files.
+	cd ~/.dotfiles
+	git submodule update --init
+
+
+Installing a plugin:
+	git submodule add http://github.com/tpope/vim-fugitive.git vim/bundle/fugitive
+	<add "ignore = dirty" to the .gitmodules file>
+	git commit -m "Installed fugitive bundle as a submodule"
