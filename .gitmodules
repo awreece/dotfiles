@@ -14,3 +14,7 @@
 	path = vim/bundle/protobuf-syntax
 	url = https://github.com/jdevera/vim-protobuf-syntax.git
 	ignore = dirty
+[submodule "vim/bundle/django"]
+	path = vim/bundle/django
+	url = https://github.com/vim-scripts/django.vim
+	ignore = dirty
