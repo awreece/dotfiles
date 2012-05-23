@@ -14,7 +14,7 @@ test -d ~/.dotfiles || git clone https://github.com/awreece/dotfiles ~/.dotfiles
 test -d ~/.oh-my-zsh || git clone https://github.com/robbyrussell/oh-my-zsh ~/.oh-my-zsh
 
 ensure_link ".dotfiles/vim"            ".vim"
-ensure_link ".dotfiles/vim/vimrc"      ".vimrc"
+ensure_link ".dotfiles/vimrc"      ".vimrc"
 ensure_link ".dotfiles/gitconfig"      ".gitconfig"
 ensure_link ".dotfiles/zshrc"          ".zshrc"
 
