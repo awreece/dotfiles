@@ -1,8 +1,7 @@
 export XTERM=xterm-color
 export CLICOLOR=1
 
-# TODO(awreece): Be robust to not having {brew,go} installed.
-export GOROOT=`brew --prefix go`
+if [[ -s $HOME/.bashrc_local ]] ; then source $HOME/.bashrc_local ; fi
 
 # command -v brew >/dev/null 2>/dev/null
 # if (( $? )); 
