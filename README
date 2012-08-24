@@ -1,5 +1,4 @@
 Installation instructions:
-
 	# Symlink the vimrc file.
 	ln -s ~/.dotfiles/vimrc ~/.vimrc
 
@@ -8,6 +7,12 @@ Installation instructions:
 
 	# 'Install' the go bundle.
 	ln -s $GOROOT/misc/vim ~/.vim/bundle/go
+
+	# Symlink the bashrc file.
+	ln -s ~/.dotfiles/bashrc ~/.bashrc
+
+	# Symlink the gitconfig file
+	ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 
 	# Actually get submodule files.
 	cd ~/.dotfiles
