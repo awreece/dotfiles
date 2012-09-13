@@ -1,0 +1,31 @@
+# Attach brackets to their pre-block statements.
+--style=attach
+
+# Add brackets for one one ifs.
+--add-brackets
+
+# Two space indents.
+--indent=spaces=2
+
+--indent-switches
+
+# --no-indent-namespaces
+
+# Don't excessively indent conditional statements.
+--min-conditional-indent=0
+
+# Allow neat indentation out past 40 characters.
+--max-instatement-indent=80
+
+# Insert space padding around operators.
+--pad-oper
+
+# Inset a space after conditionals.
+--unpad-paren
+--pad-header
+
+# Put asterisk next to type for pointers.
+--align-pointer=type
+
+# Linux style LF for line end.
+--lineend=linux
