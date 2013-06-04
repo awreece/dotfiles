@@ -83,5 +83,8 @@ defaults write com.apple.screencapture disable-shadow -bool true
 # Disable “natural” (Lion-style) scrolling
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 
+# Time machine only every 6 hours.
+sudo defaults write /System/Library/LaunchDaemons/com.apple.backupd-autoStartInterval -int 21600
+
 for app in Safari Finder Dock Mail SystemUIServer; do killall "$app" > /dev/null 2>&1; done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
