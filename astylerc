@@ -15,7 +15,7 @@
 --min-conditional-indent=0
 
 # Allow neat indentation out past 40 characters.
---max-instatement-indent=80
+--max-instatement-indent=40
 
 # Insert space padding around operators.
 --pad-oper
