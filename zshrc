@@ -1,5 +1,6 @@
 # Use vim and tell oh-my-zsh to use vim defaults.
 export EDITOR=vim
+export CLICOLOR=1
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
