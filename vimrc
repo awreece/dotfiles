@@ -10,12 +10,10 @@ call pathogen#infect()
 filetype indent on
 filetype plugin on
 
-" let g:solarized_termtrans = 1
-let g:solarized_termcolors=256
+" let g:solarized_termcolors=256
 syntax on
 colorscheme solarized
 
-" set expandtab         " Replace all tabs with with spaces.
 
 " Use sane regex matching. Thanks Steve Losh!
 " http://stevelosh.com/blog/2010/09/coming-home-to-vim/
@@ -48,8 +46,9 @@ set linebreak		" Display long lines as wrapped at word boundries.
 set colorcolumn=80      " Display a colored column at column 80
 
 set softtabstop=2	" Smaller tabs.
-set tabstop=8		" Smaller tabs.
+set tabstop=1		" Smaller tabs.
 set shiftwidth=2	" Use 4 space indentation for each step of auto indent.
+set expandtab           " Replace all tabs with with spaces.
 
 set showmode			" Show if in Insert, Visual, Replace etc.
 set showcmd			" Show (partial) command in status line.
