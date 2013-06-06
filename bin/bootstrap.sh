@@ -16,6 +16,7 @@ ensure_link ".dotfiles/vim"            ".vim"
 ensure_link ".dotfiles/vimrc"      ".vimrc"
 ensure_link ".dotfiles/gitconfig"      ".gitconfig"
 ensure_link ".dotfiles/zshrc"          ".zshrc"
+ensure_link ".dotfiles/zshenv"          ".zshenv"
 ensure_link ".dotfiles/oh-my-zsh"          ".oh-my-zsh"
 
 cd ~/.dotfiles
