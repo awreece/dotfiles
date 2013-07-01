@@ -36,3 +36,6 @@
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = https://github.com/awreece/oh-my-zsh.git
+[submodule "prezto"]
+	path = prezto
+	url = https://github.com/awreece/prezto.git
