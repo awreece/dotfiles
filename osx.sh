@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 # TODO(awreece) Investigate `defaults read com.apple.Terminal`, specifically
 # shellExitAction = 1
