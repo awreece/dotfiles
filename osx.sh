@@ -68,7 +68,7 @@ defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Target Search Fi
 defaults write com.apple.finder QLEnableTextSelection -bool true
 
 # Enable four-finger tap to go back to most recent workspace.
-defaults write com.apple.dock double-tap-jump-back -bool true
+# defaults write com.apple.dock double-tap-jump-back -bool true
 
 # Enable full keyboard access for all controls (e.g. enable Tab in modal
 # dialogs)
@@ -85,6 +85,9 @@ defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 
 # Time machine only every 6 hours.
 sudo defaults write /System/Library/LaunchDaemons/com.apple.backupd-autoStartInterval -int 21600
+
+# Disable Dashboard.
+defaults write com.apple.dashboard mcx-disabled -boolean YES
 
 for app in Safari Finder Dock Mail SystemUIServer; do killall "$app" > /dev/null 2>&1; done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
