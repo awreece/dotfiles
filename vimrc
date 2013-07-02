@@ -13,7 +13,7 @@ filetype plugin on
 " let g:solarized_termcolors=256
 syntax on
 colorscheme solarized
-
+set background=dark
 
 " Use sane regex matching. Thanks Steve Losh!
 " http://stevelosh.com/blog/2010/09/coming-home-to-vim/
