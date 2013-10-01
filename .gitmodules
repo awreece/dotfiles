@@ -33,9 +33,14 @@
 [submodule "vim/bundle/vim-colors-solarized"]
 	path = vim/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
+	ignore = dirty
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = https://github.com/awreece/oh-my-zsh.git
 [submodule "prezto"]
 	path = prezto
 	url = https://github.com/awreece/prezto.git
+[submodule "vim/bundle/Floobits"]
+	path = vim/bundle/Floobits
+	url = https://github.com/Floobits/floobits-vim
+	ignore = dirty
