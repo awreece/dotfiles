@@ -8,16 +8,23 @@ Installation instructions:
 	# 'Install' the go bundle.
 	ln -s $GOROOT/misc/vim ~/.vim/bundle/go
 
-	# Symlink the bashrc file.
-	ln -s ~/.dotfiles/bashrc ~/.bashrc
-
 	# Symlink the gitconfig file
 	ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 
 	# Actually get submodule files.
 	cd ~/.dotfiles
-	git submodule update --init
+	git submodule update --init --recursive
 
+	ln -s ~/.dotfiles/prezto ~/.zprezto
+
+	zsh -c '
+setopt EXTENDED_GLOB
+for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+	ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+done
+'
+
+	chsh -s zsh
 
 Installing a plugin:
 	git submodule add http://github.com/tpope/vim-fugitive.git vim/bundle/fugitive
