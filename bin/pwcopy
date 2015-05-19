@@ -1,0 +1,21 @@
+#!/bin/bash
+
+set -e
+set -o pipefail
+
+function clear_pass
+{
+	echo invalidpass | pbcopy
+ terminal-notifier -remove pwcopy >/dev/null
+}
+trap clear_pass EXIT
+
+echo -n "Enter passphrase: "
+pwsafe -p "$1" | tr -d '\n' | pbcopy
+echo ""
+
+terminal-notifier -title pwcopy -group pwcopy -subtitle "$1" \
+    -message 'Password copied to clipboard, click to clear.' \
+    -execute "kill $$" >/dev/null
+echo "Password copied to clipboard, clearing it in 30s."
+sleep 30
