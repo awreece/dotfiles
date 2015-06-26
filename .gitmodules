@@ -44,3 +44,7 @@
 	path = vim/bundle/Floobits
 	url = https://github.com/Floobits/floobits-vim
 	ignore = dirty
+[submodule "vim/bundle/vim-go"]
+	path = vim/bundle/vim-go
+	url = https://github.com/fatih/vim-go
+	ignore = dirty
