@@ -19,6 +19,7 @@ ensure_link ".dotfiles/zshrc"          ".zshrc"
 ensure_link ".dotfiles/zshenv"          ".zshenv"
 ensure_link ".dotfiles/oh-my-zsh"          ".oh-my-zsh"
 ensure_link ".dotfiles/prezto"          ".zprezto"
+ensure_link ".dotfiles/gdbinit"          ".gdbinit"
 
 cd ~/.dotfiles
 git submodule update --init

@@ -11,6 +11,8 @@ Installation instructions:
 	# Symlink the gitconfig file
 	ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 
+	ln -s ~/.dotfiles/gdbinit ~/.gdbinit
+
 	# Actually get submodule files.
 	cd ~/.dotfiles
 	git submodule update --init --recursive
