@@ -13,6 +13,10 @@ defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
 # Set a blazingly fast keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 0
 
+# Disable smart quotes
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+
 # Repeat keys instead of popping up accent menu.
 defaults write -g ApplePressAndHoldEnabled -bool false
 
