@@ -93,5 +93,8 @@ sudo defaults write /System/Library/LaunchDaemons/com.apple.backupd-autoStartInt
 # Disable Dashboard.
 defaults write com.apple.dashboard mcx-disabled -boolean YES
 
+# Plain text default for text edit.
+defaults write com.apple.TextEdit RichText -int 0
+
 for app in Safari Finder Dock Mail SystemUIServer; do killall "$app" > /dev/null 2>&1; done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
